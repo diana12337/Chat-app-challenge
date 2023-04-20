@@ -1,0 +1,312 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html, body {
+  height: 100%;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-family: 'Outfit', sans-serif;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+/*
+  8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+
+body {
+  background:hsl(0, 0%, 100%);
+  display: grid;
+  place-content: center;
+  position: relative;
+  min-height: 100%;
+
+}
+.container {
+  display: flex;
+  gap: 8rem;
+  align-items: center;
+}
+.mobile {
+  
+  background-color:  hsl(0, 0%, 100%);
+  border-radius: 30px;
+  max-width: 260px;
+  position: relative;
+  box-shadow: 0 20px 38px rgba(0,0,0,0.05), 0 20px 12px rgba(0,0,0,0.20);
+}
+
+.mobile-container {
+  background-color:  hsl(270, 20%, 96%);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  margin: 10px;
+  
+}
+
+.top {
+  width: 57%;
+  background: white;
+  border-radius: 20px;
+  padding: 15px;
+  position: absolute;
+  top: 0;
+  left: 57px;
+}
+.samuel {
+  background-image: linear-gradient(to right, #8838ff,	#e942ff);
+  border-radius: 20px 20px 0 0 ;
+  padding: 1.8rem .7rem .7rem 1.5rem;
+  display: flex;
+  gap: .5rem;
+ 
+}
+
+.less-than {
+  width: 19px;
+  height: 19px;
+  color: hsl(276, 100%, 81%);
+  position: absolute;
+  left: 20px;
+  top: 43px;
+  -webkit-filter: invert(100%);
+  filter: invert(100%); 
+}
+
+
+.more {
+  width: 15px;
+  height: 15px;
+  color: hsl(276, 100%, 81%);
+  position: absolute;
+  right: 20px;
+  top: 43px;
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+.name {
+  color: hsl(270, 55%, 93%);
+  font-size: 12px;
+  font-weight: 500;
+  opacity: 0.95;
+}
+
+.available {
+  color: hsl(276, 100%, 81%);
+  font-size: 8px;
+}
+.pink-message {
+  background: hsl(270, 55%, 93%);
+  width: 60%;
+  border-radius: 10px 10px 10px 5px;
+  line-height: 1.3;
+  padding: 8px;
+  font-size: 8px;
+  color: hsl(276, 55%, 52%);
+  margin-left: 10px;
+}
+
+.dogs {
+  display: flex;
+  justify-content: flex-end;
+  gap: .5rem;
+  margin-right: 10px;
+}
+.white-conversation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: .5rem;
+  margin-right: 10px;
+}
+.white-message {
+  background: white;
+  color: hsl(271, 15%, 43%);
+  border-radius: 10px 10px 5px 10px;
+  line-height: 1.3;
+  padding: 8px;
+  font-size: 8px;
+}
+
+.button-message {
+  display: flex;
+  justify-content: flex-start;
+  padding: .3rem;
+  background-image: linear-gradient(to left, #8838ff,	#e942ff);
+  color:  hsl(0, 0%, 100%);
+  width: 70%;
+  border-radius: 10px 10px 10px 5px;
+  margin-left: 10px;
+}
+
+
+
+.description {
+  max-width: 409px;
+  color: hsl(271, 36%, 24%);
+  font-size: 16px;
+}
+
+.description-paragraph {
+  color: hsl(270, 7%, 64%);
+  margin-top: 1rem;
+}
+
+.time {
+  color:	rgb(255, 255, 255, 0.7);
+  font-size: 8px;
+  padding-left: .4rem;
+  place-content: center;
+  padding-top: .3rem;
+}
+
+.price-walk {
+  font-size: 14px;
+  font-weight: 700;
+  padding-left: 2.5rem;
+}
+
+.price-walk-2 {
+  font-size: 14px;
+  font-weight: 700;
+  padding-left: 3.3rem;
+}
+
+.img {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.avatar {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid hsl(270, 55%, 93%);
+}
+
+.left {
+  background-image: linear-gradient(to bottom, #e942ff 5%,	#8838ff 70%); 
+  width: 40vw;
+  height: 80vh;
+  position: absolute;
+  border-radius: 0 0 50% 50%; 
+  left: -200px;
+}
+
+.right {
+  background: hsl(270, 55%, 98%);
+  width: 40vw;
+  height: 80vh;
+  position: absolute;
+  border-radius: 50% 50% 0 0;
+  right: -200px;
+  bottom: 0;
+  z-index: -1;
+}
+
+.input-type {
+  border: none;
+  border-radius: 20px;
+  padding: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 220px;
+}
+
+input::placeholder {
+  color: hsl(206, 6%, 79%);
+  font-size: 12px;
+}
+
+input[type='radio'] {
+  margin-top: .2rem;
+  width: 15px;
+  height: 15px;
+  opacity: 0.2;
+  
+}
+
+
+.png {
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  bottom: 27px;
+  right: 22px;
+}
+
+
+
+
+@media only screen and (max-width: 375px) {
+  
+
+  .container {
+    flex-direction: column;
+    flex-direction: center;
+
+
+  }
+ .left {
+  width: 100vw;
+  height: 100vh;
+  left: -200px;
+  bottom: 200px;
+}
+
+.right {
+  width: 100vw;
+  height: 100vh;
+  right: -200px;
+  top: 400px;
+}
+
+.description {
+  width: 90vw;
+  text-align: center;
+  
+}
+
+}
+
+
+
+
